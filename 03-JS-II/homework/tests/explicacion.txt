@@ -1,0 +1,23 @@
+for: es un bucle que permite ejecutar código de manera simple y que amerite muchas repeticiones.
+su anatomia esta compuesta por: for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+1era parte: for es la palabra reservada. 
+2da parte: i es la variable que se usa para realizar las repeticiones.
+3era parte: se realiza una comparación y/o expresión que mientras arroje el valor boobleano true entrará al bloque de código dentro de las llaves.
+4ta parte: esta el operador ++ que permite el aumento de uno en uno, en este caso aumenta la variable i.
+
+&& o AND: es un operador lógico que concatena dos o mas expresiones u operando, su función consiste en que el resultado que arroje cada operando si ambos o mas arrojan true, && arrojará true todo como resultado de cada  operando pero si alguno de ellos arroja false && colocará false a los los demás los operandos.
+ej: 1 > 0 && 2 > 0 && 3 > 0 --> cada expresión arroja true y && da como resultado true.
+ej: 1 < 0 && 2 > 0 && 3 > 0 --> la primera expresión arroja false y por lo tanto && da como resultado false en todas demás expresiones.
+
+|| o OR: es un operador lógico que concatena dos o mas expresiones u operando, este evalúa los valores booleanos, si un operando tiene true todos arrojarán true aunque las demás tengan false, de lo contrario da false si cada operando arroja false.
+ej: 1 > 0 || 2 < 0 || 3 < 0 --> la primera expresión arroja true y por lo tanto || da como resultado true en todas demás expresiones aunque arrojen false.
+ej: 1 < 0 || 2 < 0 || 3 < 0 --> todas las expresiones arrojan false y por lo tanto || da como resultado false.
+
+! o NOT: es un operador lógico que permite arrojar el valor booleano contrario, es decir, si una expresión arroja true es posible colocar del lado izquiero !/NOT para revertir el valor true por false.
+tambien se puede usar como comparador con !== que quiere decir distinto.
+ej: !(2 < 0) --> el valor booleano sin NOT es false pero con NOT revierte el false y lo cambia por true. 
+ej: 2 !== 0 --> el valor booleano es true porque 2 si es distinto a 0. 
+
+
