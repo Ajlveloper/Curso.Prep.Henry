@@ -1,0 +1,1 @@
+array: es una colección de cualquier tipo de dato, a diferencia de una variable básica que puedo guardar valores de un solo tipo de dato, con una variable que guarde un array puedo guardar muchos elementos de cualquier tipo de dato y acceder a ella cuando se desee. 
