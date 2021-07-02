@@ -1,0 +1,9 @@
+Objetos: es otro coleccionador de datos al igual que los arrays, pero que nos permite hacerlo de manera mas escalable. No tienen indice sino que contienen key/clave o propiedades. Los objetos representan con las propiedades una sola cosa mientras que los arrays pueden representar muchas cosas. Su anatomia es: objeto = {propiedad/key o clave: valor/value} nombre del objeto, luego la propiedad que contiene clave y su valor.
+
+Propiedades: Las propiedades son como un pedazo de representación o modelado de una cosa en este del objeto, esta contiene una clave y un valor. La clave identifica la propiedad y el valor puede ser cualquier tipo de dato básico, incluso arrays u objetos.
+
+Métodos: Son funciones depositados dentro de un objeto, es decir, puede ser el valor de una clave de una propiedad del objeto.
+
+Bucle for in: Como los objetos no tineen indice como los arrays que si tienen indice y nos permite recorrerlos con el for tradicional, este bucle es quien nos permite recorrer un objeto, su anatomia es: for (var iterador in nombreObjeto) {}.
+
+Notación de puntos vs Notación de corchetes: Dot Notation or Bracket Notation ambas nos permite acceder a las propiedades de los array. Notación de puntos es la mas usada, su anatomia es: objeto.clave. Notación de corchete objeto['clave'], esta notación nos permite acceder al valor de la clave cuando hago un bucle for in.
