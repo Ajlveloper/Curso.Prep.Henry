@@ -1,0 +1,12 @@
+Prototype: Es una propiedad que tiene cualquier constructor/Clases que me permiten compartir mismos métodos, y de esta forma se evita depositarlas en el constructor porque ocuparía mucho espacio en memoria. El funcionamiento de esta consiste en solo depositar los metodos en protottype. Al invocar un método de una clase, Javascript primero va a al constructor a evaluar si la propiedad existe y sino, esta va al __proto__ del objeto y si esta lo devuelve. Su anatomia es la siguiente: function Trabajador (nombre, dni, apellido) {this.nombre = nombre this.dni = dni;} Trabajador.prototype.saluda = function () {return 'Hola ' + this.apellido = apellido}. var juan = new Trabajador('Juan', 1232324, 'López');
+
+Constructors : Es una plantilla que me permite compartir propiedades para muchos objetos, esta herramienta permite el no repertir código sino que con un solo bloque de código sirva para muchas cosas mas, como lo objetos que es en este caso. Su estructura es genérica pero sus instancias específicas. 
+ejemplo:
+function Perro (nombre, edad, raza) {this.name = nombre; this.edad = edad; this.raza = raza;} var max = Perro ('Max', 4, 'Golden');
+
+La funcion constructor se caracteriza como importante por el nombre de esta que comienza en mayuscula.
+
+El this es sumanente importante al usar el constructor y prototype.
+
+
+
