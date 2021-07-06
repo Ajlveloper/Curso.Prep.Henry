@@ -1,0 +1,8 @@
+Funciones Calback: Cuando una función esta como argumento de otra función este toma el nombre de callback. 
+Debe redactarse de la siguiente manera:
+
+function resta(a, b) {return a - b;}
+
+function nombreResta(nombre, cb, a, b) {return resta(a, b);}
+
+nombreResta('Angelo', resta, 5, 6);
