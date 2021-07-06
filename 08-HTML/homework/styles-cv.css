@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #292839;
+}
+.flex {
+    background-color: #a5a4b9;
+    width: 999px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#divId1 {
+    background-color: #79778b;
+    flex-basis: 15%;
+    flex-grow: 1;
+    /* margin-right: 10px; */
+    /* padding: 10px;    */
+    text-align: center;
+}
+#divId1 > div > img {
+    width: 60%;
+    /* width: 145px; */
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+#divId1 > div > h1 {
+    margin-bottom: 5px;
+    text-align: center;
+    /* padding-left: 10px; */
+    color: #d4d2e8;
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#divId1 > div > section > h2 {
+    display: block;
+    width: 102.6%;;
+    color: #d4d2e8;
+    background-color: #292839;
+    font-size: 16px;
+    padding: 10px 27px;
+    position: relative;
+    right: 10px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-right: -10px;
+}
+#divId1 > div > section {
+    text-align: left;
+}
+#divId1 > div > section > p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #d4d2e8;
+    padding: 10px;
+}
+#divId1 > div > section > span {
+    display: block;
+    width: 100%;
+    min-height: 10px;
+    background-color: #292839;
+}
+#divId1 > div > section > #hb1 {
+    display: block;
+    width: 95%;
+    background-color: #a5a4b9;
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+}
+#divId1 > div > section > #hb2 {
+    display: inline-block;    
+    width: 90%;
+    background-color: #a5a4b9;
+    position: relative;
+    bottom: 16px;
+    left: 0;
+}
+#divId1 > div > section > #hb3 {
+    display: block;
+    width: 50%;
+    background-color: #a5a4b9;
+    position: relative;
+    bottom: 10px;
+}
+
+
+#divId2 {
+    background-color: #d4d2e8;
+    flex-basis: 70%;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+#divId2 > * {
+    line-height: 1.6;
+}
+#divId2 > div > section > h2 {
+    color: #292839;    
+    border-top: solid 1px #79778b;
+    border-bottom: solid 1px #79778b;
+}
+#divId2 > div > section > h3 {
+    color: #686868;
+}
+#divId2 > div > section > p > span {
+    color: #686868;
+    font-style: italic;
+}
