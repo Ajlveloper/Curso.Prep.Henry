@@ -62,6 +62,9 @@ body {
     color: #d4d2e8;
     padding: 10px;
 }
+#divId1 > div #seccion {
+    position: relative;
+}
 #divId1 > div > section > span {
     display: block;
     width: 100%;
@@ -72,24 +75,24 @@ body {
     display: block;
     width: 95%;
     background-color: #a5a4b9;
-    position: relative;
-    bottom: 10px;
+    position: absolute;
+    top: 83px;
     left: 0px;
 }
 #divId1 > div > section > #hb2 {
     display: inline-block;    
     width: 90%;
     background-color: #a5a4b9;
-    position: relative;
-    bottom: 16px;
+    position: absolute;
+    bottom: 50px;
     left: 0;
 }
 #divId1 > div > section > #hb3 {
     display: block;
     width: 50%;
     background-color: #a5a4b9;
-    position: relative;
-    bottom: 10px;
+    position: absolute;
+    bottom: 0px;
 }
 
 
