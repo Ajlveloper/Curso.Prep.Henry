@@ -60,8 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
-
+  if (x === y) {
     return true;
   }
   return false;
@@ -71,7 +70,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
   }
 
@@ -108,7 +107,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return true;
   }
   return false;
@@ -118,7 +117,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 1) {
+  if (num % 2 === 1) {
     return true;
   }
   return false;
@@ -199,26 +198,21 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var areaRectangulo = alto * ancho;
-  return areaRectangulo;
+  return alto * ancho;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var perimetro = 4 * lado;
-
-  return perimetro;
+  return 4 * lado;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var triangulo = base * altura / 2;
-
-  return triangulo;
+  return base * altura / 2;
 }
 
 
@@ -227,9 +221,7 @@ function deEuroAdolar(euro){
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   var dolar = 1.20;
-  var euros = dolar * euro;
-
-  return euros;
+  return dolar * euro;
 }
 
 
@@ -240,7 +232,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
     return 'Es vocal';
-  } else if (letra.length >= 1) {
+  } else if (letra.length > 1) {
     return 'Dato incorrecto';
   }
 }

@@ -38,7 +38,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  return objetoMisterioso['numeroMisterioso'] * 5;
+  return objetoMisterioso.numeroMisterioso * 5;
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -66,11 +66,8 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario.email != undefined) {
-    return true;
-  } else {
+  if (usuario.email != undefined) return true;  
     return false;
-  }
 }
 
 
@@ -79,12 +76,8 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto.hasOwnProperty(propiedad)) {
-    return true;
-  } else {
-    return false;
-  }  
-    
+  if (objeto[propiedad]) return true;
+    return false;     
 }
 
 function verificarPassword(usuario, password) {
@@ -92,11 +85,8 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario['password'] === password) {
-    return true;
-  } else {
+  if (usuario['password'] === password) return true;
     return false;
-  }
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -123,7 +113,7 @@ function pasarUsuarioAPremium(usuarios) {
   // Devuelve el array de usuarios
   // Tu código:
   for (var i in usuarios) {
-    usuarios[i]['esPremium'] = true;
+    usuarios[i].esPremium = true;
   }
   return usuarios;
 }

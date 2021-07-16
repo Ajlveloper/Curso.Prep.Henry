@@ -7,7 +7,7 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y) {
     return x;
-  } else if (x <= y) {
+  } else if (y > x) {
     return y;
   } else {
     return x;
@@ -128,7 +128,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 === 0 && numero % 5 === 0) {
+  if (numero % 3 === 0 && numero % 5 === 0 || numero % 5 === 5) {
     return 'fizzbuzz';
   } else if (numero % 5 === 0 || numero % 5 === 5) {
     return 'buzz';
@@ -152,12 +152,12 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 === 0 || num2 === 0 || num3 === 0) {
     return 'Error';
   } 
+  if (num1 > 0 && num1 > num2 && num1 > num3) {
+    return 'Número 1 es mayor y positivo';
+  } 
   if (num3 > num1 && num3 > num2) {
     num3++;
     return num3;
-  } 
-  if (num1 > 0 && num1 > num2 && num1 > num3) {
-    return 'Número 1 es mayor y positivo';
   } 
   else {
     return false;
@@ -171,15 +171,11 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   
-  if (numero < 2) {
+  if (numero <= 1) {
     return false;
   }
 
-  if (numero === 2) {
-    return true;
-  }
-
-  for (var i = 2; i < 10/2; i++) {
+  for (var i = 2; i < numero; i++) {
 
       if (numero % i === 0) {
         return false;
@@ -208,9 +204,6 @@ function tablaDelSeis(){
   
   for (var i = 0; i <= 10; i++){
     multiplicacion.push(6*i);  
-
-
-
   }
   return multiplicacion;
   
@@ -219,7 +212,8 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero >= 100 && numero < 1000) {
+  var n = numero.toString();
+  if (n.length === 3) {
     return true;
   } 
   else {
@@ -233,8 +227,8 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   var i = 0;
   do {
+    numero += 5;
     i++;
-    numero = numero + 5;
   } while (i < 8);
   
   return numero;
